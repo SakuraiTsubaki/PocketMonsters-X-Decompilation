@@ -1,6 +1,6 @@
 # Pocket Monsters X — Decompilation
 
-![Status](https://img.shields.io/badge/status-initial_setup-lightgrey)
+![Status](https://img.shields.io/badge/status-active_decompilation-blue)
 ![Project](https://img.shields.io/badge/project-decompilation-blue)
 ![ROMs](https://img.shields.io/badge/ROM_binaries-not_included-success)
 
@@ -15,7 +15,9 @@ Decompilation and source-reconstruction project for **Pokémon X**.
 
 ## 🚧 Status
 
-This repository is in its **initial setup** stage. Source reconstruction and documentation will be added progressively.
+Active decompilation has begun. The project is currently in **Phase 0: exact target identification**, with reproducible target-inventory tooling and regression tests in place. The first verified retail-target manifest and ExeFS/RomFS map will be recorded when a local Pokémon X source is available.
+
+See [Decompilation Start](docs/DECOMPILATION_START.md) for the active workflow.
 
 ## 🗂️ Planned scope
 
@@ -29,11 +31,13 @@ This repository is in its **initial setup** stage. Source reconstruction and doc
 
 ## 📌 Repository policy
 
-ROM images and redistributed ROM binaries are **not included**. The repository is intended for reconstructed source, extracted/recreated project data, tooling, analysis, and documentation.
+ROM images and redistributed ROM binaries are **not included**. The repository is intended for reconstructed source, extracted/recreated project data, tooling, analysis, and documentation. Local target images are treated as read-only inputs and are identified by metadata and hashes rather than committed bytes.
 
 ## 🧭 Roadmap
 
-- [ ] Establish baseline version/revision inventory
+- [x] Establish clean repository baseline
+- [x] Add target identity/inventory tooling
+- [ ] Establish authoritative version/revision inventory
 - [ ] Map executable and data structures
 - [ ] Begin source reconstruction
 - [ ] Document assets, scripts, and formats
@@ -43,6 +47,7 @@ ROM images and redistributed ROM binaries are **not included**. The repository i
 
 | Document | Purpose |
 | --- | --- |
+| [Decompilation start](docs/DECOMPILATION_START.md) | Active target-identification and reconstruction workflow |
 | [Project status](docs/PROJECT_STATUS.md) | Current stage, coverage, validation level, and next milestones |
 | [Roadmap](docs/ROADMAP.md) | Recommended decompilation phases and long-term progression |
 | [Version coverage](docs/VERSIONS.md) | Regions, languages, revisions, updates, builds, and hashes |
